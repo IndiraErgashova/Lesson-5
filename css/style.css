@@ -104,3 +104,40 @@ ul{
         padding-top: 240px;
     }
 }
+
+
+.bottom{
+    background-color: rgba(153, 58, 241, 0.7);
+
+}
+.footer_list{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    padding-top: 20px;
+}
+.add_list{
+    margin-left: -20px;
+}
+.add_list li a{
+    font-size: 20px;
+    padding: 5px;
+}
+.footer_list li a:hover{
+    color: gold;
+}
+@media screen and (max-width:972px) {
+    .footer_list{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:542px) {
+    .add_list{
+        display: none;
+    }
+}
