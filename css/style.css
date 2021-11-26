@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 15px 5%;
+    background-color: rgba(153, 58, 241, 0.7);
+    height: 100%;
+    align-items: center;
+}
+.navbar h1{
+    color: white;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+.list li{
+    margin: 5px 10px;
+}
+.list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: .5s;
+}
+.list li a:hover{
+    color: blueviolet;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.iconList{
+    display: flex;
+    justify-content: space-between;
+}
+.iconList li{
+    margin: 5px 10px;
+}
+.iconList li a{
+    color: white;
+    font-size: 20px;
+}
+.burger_menu{
+    display: none;
+}
+@media screen and (max-width:770px) {
+    .burger_menu{
+        display: block;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .list{
+        display: none;
+    }
+    .iconList{
+        display: none;
+    }
+}
+.banner{
+    margin-top: -81px;
+    width: 100%;
+    height: 90vh;
+    background: url("https://img1.akspic.ru/originals/9/7/5/8579-floristiki-cvetochnyj_buket-korzina-cvetkovoe_rastenie-srezannye_cvety-3840x2160.jpg") center / cover;
+}
+.banner h1{
+    text-align: center;
+    font-size: 120px;
+    padding-top: 300px;
+    color: white;
+    text-shadow: 0px 4px 10px white;
+
+}
+@media screen and (max-width:1000px) {
+    .banner h1{
+        padding-top: 200px;
+    }
+}
+@media screen and (max-width:743px) {
+    .banner h1{
+        font-size: 90px;
+    }
+}
+@media screen and (max-width:484px) {
+    .banner h1{
+        font-size: 50px;
+        padding-top: 150px ;
+    }
+    .banner{
+        height: 60vh;
+        margin-top: -50px;
+    }
+}
+@media screen and (max-width:1252px) {
+    .banner h1{
+        padding-top: 240px;
+    }
+}
